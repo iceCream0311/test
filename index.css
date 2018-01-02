@@ -1,0 +1,653 @@
+@charset "utf-8";
+/*网页的全局样式 解决兼容问题*/
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,td,form,input,select,textarea,span,img,a,em,strong,*{ margin:0; padding:0;  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;}
+body{ font-family:"Microsoft YaHei CN Regular", 微软雅黑; font-size:12px; color:#646464;}
+ul,ol,li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:14px;}
+input,select,textarea{ vertical-align:middle;}
+img{ border:none; vertical-align:middle;}
+a{ text-decoration:none; color:#f6cf70;}
+a:hover{color:#ffffff;}
+button{-webkit-tap-highlight-color:rgba(0,0,0,0); border:none;outline:none;}
+.fl{float: left;}
+.fr{float:right;}
+
+.clearfix{ clear: both;}
+
+
+/*头部 */
+.header{height:80px;background-color: #0d1521;}
+.header .header-content{width:1200px;background-color:#0d1521;height:80px;margin:0 auto;}
+.header .header-left{width:200px;float: left;height: 80px;line-height: 80px}
+.header .header-left img{width:100%;}
+.header .header-right{height:80px;line-height: 80px;float:right;}
+.header .header-right a{margin-right: 20px;font-size: 14px;color:#55c0cc;}
+.header .header-right a:hover{color:#f39b15;}
+.header .header-right a:nth-child(6){margin-right: 8px;margin-left:15px;}
+.header .header-right a:last-child{margin-right: 0;margin-left: 8px;}
+
+
+/*底部*/
+.footer{background-color:#181a24;}
+.footer-main{ width:1200px;background-color:#181a24;padding:40px 0 40px 0; margin:0 auto;clear:both;}
+.footer p{ text-align:center;height:24px; line-height:24px;font-size:12px;color:#d0d0d0;}
+.footer p a{font-size:12px; color:#bebebe; padding:0 3px;}
+.footer p a:hover{ color:#f39b15;}
+
+
+/*－－－－－－－－－－－－－－－ 内容区域－－－－－－－－－－－－－－－ */
+body{
+    background-color: #0d1521;
+}
+/*－－－－－－－－－ banner部分－－－－－－－ */
+.banner{
+    max-width:1304px;
+    min-width: 1200px;
+    /* height: 516px; */
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+}
+
+/*－－－－－－－－－content部分－－－－－－－ */
+.content{width: 1200px;margin: auto;overflow: hidden;position: relative;}
+
+
+
+/*－－－－－轮播区域－－－－－*/
+ .main-carousel{
+    width: 100%;
+
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.main-carousel>li{
+    width: 590px;
+    height: 352px;
+    float: left;
+    border:8px solid #1f2b33;
+    background-color: #2e3c46;
+    position: relative; overflow: hidden;
+}
+.main-carousel .first{
+    margin-right: 20px;
+    
+}
+
+.carousel{
+    padding-top: 50px;
+}
+.first .main01-left-banner{width:100%; height:100%;overflow: hidden;top:0;}
+.first  .main01-left-banner a{display:block;width:100%; height:100%; position: absolute; top:0; left:0;}
+.first  .main01-left-banner a>img{ width:100%; height:100%;}
+.first ul {
+    overflow: hidden;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 100%;
+    padding-left: 40%;
+}
+.first  ul li{
+    width:10px;
+    height:10px;
+    background-color:#0d1521;
+    margin-top:10px; 
+    margin-right: 6px;
+    text-align:center;
+     cursor: pointer;
+     float: left;
+     border-radius:100%; -webkit-border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%;}
+.first ul li.cur{border:2px solid #0d1521; color:#fff;background:none;}
+
+.carousel a{
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 36px;
+    line-height: 36px;
+}
+.carousel .h1-title{
+    font-weight: 400;
+    font-size: 24px;
+}
+.margin-top-carousel{
+    margin-top: 35px;
+}
+.carousel a:hover{
+    color:#f39b15;
+}
+
+/*－－－－－ 手机端产品展示部分－－－－－ */
+
+.phone-products,.computer-products,.AI-products{
+    width: 100%;
+    background-color: #1f2b33;
+}
+.phone-products>div,.computer-products>div,.AI-products>div{
+    padding: 20px 0;
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #2e3c46
+}
+.phone-products>div>div{
+    float: left
+}
+/* 　整个手机端产品的左侧信息样式　 */
+.message-title{
+    width: 37px;
+    min-height: 400px;
+    background: url("./static/color-border.png") no-repeat;
+    background-size: contain;
+    font-size: 16px;
+    color: #24333f;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 55px;
+    margin-right: 20px;
+}
+/* 每个产品块的统一title样式 */
+.title{
+    width: 100%;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+    background-color: #2e3c46;
+    font-size: 30px;
+    color: #74e4cf;    
+}
+.title>b{
+    display: inline-block;
+    width: 28px;
+    height: 43px;
+    background: url("./static/phone-icon.png") no-repeat;
+    background-size: cover;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+/* 年度卓越产品列表样式　 */
+.well-made>.message-list>ul{
+    height: 564px;
+    width: 355px;
+    float: left;
+    overflow: hidden;
+}
+
+.message-list li{
+    width: 100%;
+    height: 100%;
+    background-color: #2e3c46;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    behavior: url(ie-css3.htc);
+}
+
+
+.left-margin{
+    margin-left: 18px;
+}
+
+.recommend>.message-list>li{
+    height: 466px;
+    width: 206px;
+    float: left;
+}
+
+/*－－－－－ 电脑端产品展示部分－－－－－ */
+
+.computer-products{
+    margin-top: 20px;
+}
+.title>b{
+    width: 50px;
+    height: 33px;
+    background: url("./static/computer-icon.png") no-repeat;
+    background-size: cover;
+}
+/*－－－ 公共使用的编辑点评部分－－－ */
+.argument-public>ul{
+    float: left;
+    font-size: 14px;
+    color: #fff
+}
+.argument-public>.user-title{
+    width: 144px;
+    margin-right: 18px;
+}
+.user-title>li{
+    width: 100%;
+}
+.user-title>.img-user{
+    width: 144px;
+    height: 144px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:url("./static/pc.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.img-name{
+    margin-top: 24px;
+    text-align: center;
+}
+.argument-public>.argument-list{
+    width: 998px;
+    height: 205px;
+}
+.argument-list{
+    padding: 18px;
+    background-color: #2e3c46;
+    
+}
+.argument-type{
+    height: 40px;
+    width: 136px;
+    background:url("./static/title-back.png") no-repeat;
+    background-size: contain;
+    color: #000;
+    padding-right: 8px;
+    line-height: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.argument-message{
+    margin-top: 28px;
+    line-height: 25px;
+    color: #fff;
+}
+
+/* －－－－pc端产品点评列表－－－－ */
+.argument-list-message>h5{
+    color: #74e4cf;
+    font-size: 24px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+.argument-content{
+    background-color: #2e3c46;    
+    margin: 15px 0;
+    /* overflow: hidden */
+}
+.argument-content>a{
+    float: left;
+    height: 212px;
+}
+.argument-img{
+    width: 244px;
+    background-color: #fff
+}
+.argument-content .argument-list{
+    width: 659px;
+    height: 212px;
+}
+.margin-right-12{
+    margin-right: 12px;
+}
+
+/*－－－－－ 职能硬件产品展示部分－－－－－ */
+
+.AI-products{
+    margin-top: 20px;
+}
+.AI-products>div{
+    border-bottom: 0px ;
+}
+.AI-products .public-p{
+    line-height: 23px;
+    margin-top: 28px;
+}
+.AI-products .user-title>.img-user{
+    background: url("./static/smoart.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/* －－－－－－－－图片放大缩小效果－－－－－－－－－－ */
+.i-subject-head img {
+    transition: -webkit-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transition: -webkit-transform 1s;
+    -moz-transition: -webkit-transform 1s;
+    cursor: pointer;
+}
+ .public-cell-phone:hover  .i-subject-head img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.title>b{
+    width: 30px;
+    height: 48px;
+    background: url("./static/AI-icon.png") no-repeat;
+    background-size: cover;
+}
+
+.left-margin-32{
+    margin-left: 32px;
+}
+
+/*－－－－－ 相关阅读－－－－－ */
+.relative-link{
+    display: block;
+    margin: 15px auto;
+    width: 138px;
+    height: 50px;
+    border:2px solid #2e3c46;
+    color: #74e4cf;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center    
+}
+.relative-list{
+    width: 100%;
+    height: 252px;
+    border-top: 2px solid #2e3c46;
+    border-bottom: 2px solid #2e3c46;
+    background-color: #0a101d;
+    padding: 36px 80px;
+}
+.relative-list>ul,.relative-list>div{
+    float: left;
+    width: 50%;
+}
+.relative-list>ul{
+    list-style: disc;
+}
+.relative-list>ul>li{
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    list-style: disc;
+    color: #f1f1f2;
+    font-size: 18px;
+}
+.relative-list>ul>li>a{
+    color: #f1f1f2;
+    font-size: 18px;
+    
+}
+.relative-list>ul>li>a:hover{
+    color: #f39b15
+}
+.relative-list>div>a{
+    display: block;
+    text-align: right;
+    
+}
+
+/* －－－－－公共样式小瓶手机－－－－－－－ */
+
+.public-cell-phone{
+    padding:15px;
+    text-align: center;
+    color: #74e4cf
+
+}
+.public-cell-phone h3{
+    width: 176px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    background-color: #1f2b33;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4)  
+}
+.public-cell-phone .img-center{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 18px;
+    display: block;
+}
+ .img-center img{
+    height: 100%;
+   
+}
+.content a{
+    display: block
+}
+.public-p{
+    height: 160px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+ 
+    
+}
+.phone-products .public-p{
+    margin-bottom: 8px;
+}
+ .public-link>a{
+    display: inline-block;
+    background-color: #74e4cf;
+    font-weight: 400;
+    color: #26484c;
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    
+   
+}
+.public-link>a:hover{
+    background-color: #f39b15;
+    color: #fff
+}
+
+/* －－－－－－公共方亮光－－－－－ */
+.i-wap-light{
+    transition:all .3s ease;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    cursor: pointer;
+}
+.i-wap-light>img{
+    width: 100%;
+    height: 100%;
+}
+.argument-content .i-wap-light:hover{
+    transform: translateY(-6px);
+   -webkit-transform: translateY(-6px);
+   -moz-transform: translateY(-6px);
+   box-shadow: 0 26px 40px -24px rgba(255,255,255,.5);
+   -webkit-box-shadow: 0 26px 40px -24px rgba(255,255,255,.5);
+   -moz-box-shadow: 0 26px 40px -24px rgba(255,255,255,.5);
+}
+
+.first-message:hover .light,.i-wap-light:hover .light {
+    transition: all .3s ease;
+    left: 100%;
+}
+.light{
+    cursor:pointer;
+    position:absolute;
+    left:-100%;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-image:linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    background-image:-webkit-linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    background-image:-ms-linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    background-image:-moz-linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    transform:skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    -moz-transform: skewX(25deg);
+    -webkit-transform: skewX(-25deg);
+}
+
+
+/* －－－－这里是双面－－－－ */
+.first-message{
+ padding:15px 20px;
+text-align: center;
+color: #74e4cf
+}
+.first-message>h3{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    background-color: #1f2b33;
+    border-radius:15px; 
+    behavior: url(ie-css3.htc);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4)    
+    
+}
+.first-message>h6{
+    color:#7bb6fa;
+    font-size: 18px;
+    font-weight: 400;
+    height: 54px;
+    line-height: 54px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4)    
+}
+.first-message .img-center{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 18px;
+}
+
+
+.second-message{
+    display: none;
+    background-color: #0d1521;
+    border: 5px solid #f2f2f2;
+
+}
+
+.public-p-span{
+    width: 100%;
+    padding-left:20px;
+    color: #74e4cf;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.public-p-span>span{
+    max-width: 80%;
+    float: left
+}
+.second-message .public-link{
+    width: 70%;
+    margin: auto;
+    margin-top: 16px;
+    
+}
+.second-message .public-link>a{
+    text-align: center;
+    margin-left: 12px;
+    width: 25%;
+
+}
+.second-message .img-center{
+    text-align: center;
+    height: 345px;
+    width: 100%;
+    margin-bottom: 55px;
+    margin-top: 10px
+}
+
+/*  */
+.to-top{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    width: 58px;
+    height: 174px;
+    z-index: 99;
+    cursor: pointer;
+}
+.to-top>.back-img{
+    width: 100%;
+    height: 70px;
+    background: url("./static/top-back.png") no-repeat;
+    background-size: contain;
+
+}
+.to-top .back-message{
+    width: 26px;
+    height: 88px;
+    border: 1px solid #fff;
+    margin: auto;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+}
+
+
+/* 用来区别IE9和IE8的，IE8不支持@meadia */
+@media screen and (min-width: 336px){
+    .message-list li{
+        background-color: #2e3c46!important;
+    } 
+    .message-list .second-message{
+        background-color: #0d1521!important;
+        
+    }
+    .first-message>h3{
+        background-color: #1f2b33!important;
+        
+    }
+   
+}
+@media screen and (min-width: 1500px){
+    .to-top{
+        right: 12%;
+    }
+}
+/* @media screen and (min-width: 1500px){
+    .to-top{
+        right: 140px;
+    }
+} */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+.public-cell-phone:hover .fadeIn{
+    animation-name: fadeIn;
+  }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1200px) {
+    .content{
+        width: 1080px;
+        font-size: 12px;
+      }
+} */
